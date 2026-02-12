@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "paths": {
+      "~/*": ["./app/*"]
+    },
+    "noEmit": true
+  },
+  "include": ["app", "vite.config.ts"]
+}

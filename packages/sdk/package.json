@@ -1,0 +1,28 @@
+{
+  "name": "@chainbridge/sdk",
+  "version": "0.1.0",
+  "description": "블록체인 UX 추상화 레이어 SDK - ERC-4337 Account Abstraction",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "ethers": "^6.13.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
